@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About Us - CHS</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to right, #dfe9f3, #ffffff);
+      color: #222;
+    }
+
+    header {
+      background: linear-gradient(90deg, #3498db, #9b59b6);
+      color: white;
+      padding: 15px 30px;
+    }
+
+    header nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .nav-links a {
+      margin-left: 20px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .subnav {
+      margin-top: 50px;
+      background: linear-gradient(90deg, #4e54c8, #8f94fb);
+      color: white;
+      text-align: center;
+      padding: 60px 20px 40px;
+    }
+
+    .subnav h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    .subnav p {
+      font-size: 1.2rem;
+    }
+
+    section {
+      max-width: 1200px;
+      margin: auto;
+      padding: 60px 20px;
+    }
+
+    .about-content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 50px;
+      align-items: center;
+    }
+
+    .about-content img {
+      max-width: 100%;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    }
+
+    .about-content div {
+      font-size: 1.1rem;
+      line-height: 1.8;
+    }
+
+    .highlight-section {
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.1));
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 20px;
+      padding: 40px;
+      margin-top: 60px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    }
+
+    .highlight-section h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      text-align: center;
+      color: #333;
+    }
+
+    .highlight-section p {
+      font-size: 1.1rem;
+      text-align: center;
+      line-height: 1.7;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .developer-section {
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.1));
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 20px;
+      padding: 40px;
+      margin-top: 80px;
+      margin-bottom: 100px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    }
+
+    .developer-profile {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 40px;
+    }
+
+    .developer-profile img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #fff;
+    }
+
+    .developer-details {
+      flex: 1;
+    }
+
+    .developer-details h2 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    .developer-details p {
+      font-size: 1rem;
+      margin: 8px 0;
+    }
+
+    .developer-details .social-links a {
+      font-size: 1.4rem;
+      margin-right: 15px;
+      color: #333;
+      transition: color 0.3s;
+    }
+
+    .developer-details .social-links a:hover {
+      color: #0077b5;
+    }
+
+    footer {
+      background-color: #2c3e50;
+      color: white;
+      padding: 40px 20px 20px;
+    }
+
+    .footer-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 30px;
+    }
+
+    .footer-section {
+      flex: 1 1 250px;
+    }
+
+    .footer-section h3 {
+      margin-bottom: 15px;
+      color: #f1c40f;
+    }
+
+    .footer-section ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .footer-section ul li {
+      margin-bottom: 10px;
+    }
+
+    .footer-section ul li a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .footer-section ul li a:hover {
+      text-decoration: underline;
+    }
+
+    .footer-bottom {
+      text-align: center;
+      padding-top: 20px;
+      border-top: 1px solid #ccc;
+      font-size: 0.9rem;
+      color: #ccc;
+    }
+
+    @media(max-width: 768px) {
+      .about-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+
+      .developer-profile {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <h2><a href="index.html" style="text-decoration: none; color: white;"><i class="fa fa-shield-alt"></i> Complaints
+          Handling System</a></h2>
+      <div class="nav-links">
+        <a href="index.html"><i class="fa fa-home"></i> Home</a>
+        <a href="register_complaint.html"><i class="fa fa-edit"></i> Register Complaint</a>
+        <a href="track_complaint.html"><i class="fa fa-search"></i> Track Complaint</a>
+        <a href="CopTeam.html"><i class="fa fa-users"></i> Cop Team</a>
+        <a href="Testimonials.html"><i class="fa fa-comment"></i> Testimonials</a>
+        <a href="about_us.html"><i class="fa fa-info-circle"></i> About Us</a>
+      </div>
+    </nav>
+  </header>
+  <div class="subnav">
+    <h1>About CHS</h1>
+    <p>Empowering citizens through digital complaint resolution</p>
+    </subnav>
+  </div>
+
+  <section>
+    <div class="about-content">
+      <div>
+        <h2>What is CHS?</h2>
+        <p>The Complaint Handling System (CHS) is a platform built to bridge the communication gap between citizens and
+          law enforcement. With easy registration, tracking, and management of complaints, we aim to build transparency
+          and trust in public services.</p>
+        <p>CHS is designed to be fast, efficient, and reliable — eliminating paperwork and enabling real-time progress
+          tracking.</p>
+      </div>
+      <img src="https://img.freepik.com/free-vector/support-center-abstract-concept_335657-3069.jpg"
+        alt="CHS Illustration">
+    </div>
+  </section>
+
+  <!-- Vision -->
+  <section class="highlight-section">
+    <h2><i class="fa fa-eye"></i> Our Vision</h2>
+    <p>To create a society where every citizen’s voice is heard, their concerns addressed transparently, and law
+      enforcement is empowered with technology to serve better and faster.</p>
+  </section>
+
+  <!-- Mission -->
+  <section class="highlight-section">
+    <h2><i class="fa fa-bullseye"></i> Our Mission</h2>
+    <p>To digitize the entire complaint management lifecycle — from registration to resolution — and make the process
+      accessible, efficient, and trustworthy for every individual regardless of location or background.</p>
+  </section>
+
+  <!-- Developer -->
+  <section class="developer-section">
+    <h2 style="text-align: center; margin-bottom: 40px;">Meet the Developer</h2>
+    <div class="developer-profile">
+      <img src="./images/developer.jpg" alt="Shashank S">
+      <div class="developer-details">
+        <h2>Shashank S</h2>
+        <p><i class="fa fa-map-marker-alt"></i> Bengaluru, India</p>
+        <p><i class="fa fa-laptop-code"></i> Full Stack Web Developer with experience in React, Spring Boot, HTML/CSS,
+          and UI design.</p>
+        <p><i class="fa fa-bullseye"></i> Passionate about building intuitive and efficient user platforms that solve
+          real-world problems.</p>
+        <div class="social-links">
+          <a href="https://github.com/ShashankSAras04" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/ss04" target="_blank"><i class="fab fa-linkedin"></i></a>
+
+          <a href="mailto:shashankst04@gmail.com"><i class="fa fa-envelope"></i></a>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3><i class="fa fa-info-circle"></i> About</h3>
+        <p>This platform ensures fast and transparent complaint resolution. We aim to create a bridge of trust between
+          citizens and law enforcement.</p>
+      </div>
+      <div class="footer-section">
+        <h3><i class="fa fa-link"></i> Quick Links</h3>
+        <ul>
+          <li><a href="register_complaint.html">Register Complaint</a></li>
+          <li><a href="track_complaint.html">Track Complaint</a></li>
+          <li><a href="CopTeam.html">CopTeam</a></li>
+          <li><a href="Testimonials.html">Testimonials</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3><i class="fa fa-map-marker-alt"></i> Contact</h3>
+        <p>123 Justice Street, Bangalore, India<br>
+          <i class="fa fa-phone"></i> +91-9876543210<br>
+          <i class="fa fa-envelope"></i> support@chs.com
+        </p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Complaint Handling System. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+
+</html>

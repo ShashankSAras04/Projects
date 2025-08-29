@@ -1,0 +1,315 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.mainnavbar {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,10,40, 0.4),rgba(4,10,40, 0.4)),url('./../Images/university.jpg');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 8px;
+}
+.logo{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    color: white;
+    padding-right: 10px;
+}
+
+.nav-links ul li a{
+    color: white;
+    text-decoration: none; 
+}
+
+
+.text-box {
+    width: 90%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 350px;
+    position: relative;
+}
+.text-box h2{
+    color: white;
+    text-align: center;
+}
+
+.text-box p{
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.text-box a{
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 4px;
+    margin-left: 350px;
+    
+}
+
+.text-box a:hover {
+    background-color: red;
+}
+
+/* ---------------Footer Design -------- */
+.footer {
+    position: fixed;
+    bottom: 0;
+    background-color: grey;
+    width: 100%;
+    height: 25px;
+    text-align: center;
+    color: white;
+}
+
+/* ----------------- Courses Design----------- */
+.courses {
+    width: 80%;
+    padding: 100px 100px;
+    text-align: center;
+}
+
+.courses p{
+    margin-bottom: 20px;
+}
+.row{
+    display: flex;
+    column-gap: 40px;
+}
+
+.course-col {
+    border: 2px solid gray;
+    border-radius: 15px;
+    background-color: lightyellow;
+    transition: 0.5s;
+}
+.course-col:hover{
+    box-shadow: 0px 0px 10px 5px lightcoral;
+}
+
+/* -----------------Campus Design-------------- */
+.campus {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding: 50px 0px;
+}
+.campus-col {
+    flex-basis: 31%;
+    justify-content: space-between;
+    padding-top: 25px;
+}
+.campus-col img{
+    width: 100%;
+    border-radius: 10px;
+}
+/* -------------------- University Facilities Design---------- */
+.facilities {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding: 50px 0px;
+}
+
+.facilities-col {
+    flex-basis: 31%;
+    justify-content: space-between;
+    padding-top: 25px;
+}
+
+.facilities-col img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* -------------------- feedback Design-------------- */
+.feedback {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    padding: 50px 0px;
+}
+
+.feedback-col {
+    flex-basis: 40%;
+    justify-content: space-between;
+    
+    position: relative;
+    padding-top: 25px;
+    border: 1px solid brown;
+    background-color: lightcyan;
+    border-radius: 10px;
+    margin-top: 25px;
+    margin-left: 50px;
+}
+.feedback-col img {
+    width: 75px;
+    height: 75px;
+    float: left;
+    border: 1px solid burlywood;
+    border-radius: 50%;
+}
+.feedback-col p{
+    text-align: justify;
+    padding: 10px;
+}
+
+.feedback-col h5{
+    text-align: center;
+}
+
+.feedback-col i{
+    color: orange;
+}
+/* ----------------- footerinfo ------------------ */
+.footerinfo {
+    height: 25vh;
+    width: 80%;
+    background-image: linear-gradient(rgba(4,10,40, 0.4),rgba(4,10,40, 0.4)),url('./../Images/bg.jpg');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    border-radius: 20px;
+    margin-left: 75px;
+    padding: 100px 0px;
+    margin-bottom: 100px;
+}
+
+.content {
+    text-align: center;
+    padding-top: 100px;
+    color: white;
+}
+
+.content h2{
+    margin-bottom: 20px;
+}
+.content a {
+    border: 1px solid white;
+    padding: 10px;
+    margin-top: 20px;
+    text-decoration: none;
+    background-color: transparent;
+    color: white;
+}
+
+
+.content a:hover {
+    background-color: red;
+}
+/* ----------------- sub nav bar for each pages --------- */
+.subnavbar {
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,10,40, 0.4),rgba(4,10,40, 0.4)),url('./../Images/sub-banner.jpg');
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 50px;
+    
+}
+.subnavbar h1{
+    margin-top: 150px;
+}
+/* -------------------------- About Us --------------- */
+.aboutus {
+    width: 80%;
+    margin: auto;
+    padding: 50px 0px;
+}
+
+.about-col {
+    flex-basis: 48%;
+}
+
+.about-col img {
+    width: 100%;
+}
+
+.about-col p{
+    text-align: justify;
+    padding-bottom: 20px;
+}
+
+.about-col a{
+    border: 1px solid black;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    transition: 1s;
+}
+
+.about-col a:hover{
+    background-color: coral;
+}
+
+
+/* -------------------- Contact Us -------------- */
+.googlemap {
+    width: 80%;
+    margin: auto;
+    padding: 50px 0px;
+}
+
+.googlemap iframe{
+    width: 100%;
+}
+
+.contact {
+    width: 80%;
+    margin: auto;
+    padding: 50px 0px;
+}
+
+.contact-col {
+    flex-basis: 48%;
+}
+
+.contact-col div{
+    padding: 10px;
+}
+
+.contact-col form {
+    margin-left: 50px;
+    padding: 10px;
+}
+/* ----------------------- Blog cultural Design ---------- */
+.cultural {
+    width: 80%;
+    margin: auto;
+    padding: 50px 0px;
+    text-align: center;
+}
+
+.cultural-col {
+    flex-basis: 48%;
+    padding-top: 25px;
+}
+
+.cultural-col p{
+    text-align: justify;
+}
+
+.cultural-col img{
+    width: 100%;
+}

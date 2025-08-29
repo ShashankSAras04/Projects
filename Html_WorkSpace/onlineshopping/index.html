@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Shopping</title>
+  <link rel="icon" type="image/jpg" href="./images/logo.jpg" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container-fluid">
+      <div class="row w-100">
+        <div class="col-auto mt-2">
+          <a class="navbar-brand text-light fw-bold mt-5" href="./index.html">
+            <i class="bi bi-shop me-2"></i>Online Shopping
+          </a>
+        </div>
+        <div class="col">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active text-light fw-semibold" aria-current="page" href="./index.html">
+                  <i class="bi bi-house-door-fill me-2"></i>Home
+                </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-light fw-semibold" id="navbarDropdown" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="bi bi-cart me-2"></i>Shop
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="./electronics.html"><i class="bi bi-phone me-2"></i>Electronics</a>
+                  </li>
+                  <li><a class="dropdown-item" href="./clothing.html"><i class="bi bi-shirt me-2"></i>Clothing</a>
+                  </li>
+                  <li><a class="dropdown-item" href="./home&kitchen.html"><i class="bi bi-house me-2"></i>Home &
+                      Kitchen</a></li>
+                  <li><a class="dropdown-item" href="./books.html"><i class="bi bi-book me-2"></i>Books</a></li>
+                  <li><a class="dropdown-item" href="./Healthy&beauty.html"><i class="bi bi-heart me-2"></i>Health &
+                      Beauty</a></li>
+                  <li><a class="dropdown-item" href="./others.html"><i class="bi bi-box-seam me-2"></i>Others</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light fw-semibold" href="./deals.html"><i class="bi bi-tag me-2"></i>Deals</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light fw-semibold" href="./cart.html"><i class="bi bi-cart me-2"></i>Cart</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light fw-semibold" href="./whishlist.html"><i
+                    class="bi bi-heart me-2"></i>Wishlist</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light fw-semibold" href="./order.html"><i class="bi bi-box2 me-2"></i>Orders</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-light fw-semibold" id="accountDropdown" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="bi bi-person me-2"></i>Account
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="./login.html"><i class="bi bi-box-arrow-in-right me-2"></i>Login/Signup</a>
+                  </li>
+                  <li><a class="dropdown-item" href="./profilemanagement.html"><i
+                        class="bi bi-person-lines-fill me-2"></i>Profile Management</a></li>
+                  <li><a class="dropdown-item" href="./address.html"><i class="bi bi-geo-alt me-2"></i>Address
+                      Book</a></li>
+                  <li><a class="dropdown-item" href="./payments.html"><i class="bi bi-credit-card me-2"></i>Payment
+                      Methods</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2 border-light form-control-sm" type="search" placeholder="Search"
+                aria-label="Search">
+              <button class="btn btn-success text-light fw-bold btn-sm" type="submit">
+                <i class="bi bi-search me-2"></i>Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- -----carousel---- -->
+  <div class="carousel-inner">
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./images/c1.jpg" class="d-block w-100" style="height: 500px; object-fit: cover;" alt="Slide 1">
+        </div>
+        <div class="carousel-item">
+          <img src="./images/c2.jpg" class="d-block w-100" style="height: 500px; object-fit: cover;" alt="Slide 2">
+        </div>
+        <div class="carousel-item">
+          <img src="./images/c3.jpg" class="d-block w-100" style="height: 500px; object-fit: cover;" alt="Slide 3">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- -------carousel ends------- -->
+
+  <!-- Featured Products Section -->
+  <div class="container my-5">
+    <h2 class="text-center mb-4">Featured Products</h2>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card h-100">
+          <img src="./images/headphones.jpg" class="card-img-top" alt="Product 1">
+          <div class="card-body">
+            <h5 class="card-title">Wireless Earbuds</h5>
+            <p class="card-text">Experience premium sound quality with our latest wireless earbuds.</p>
+            <button class="btn btn-primary w-100">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="./images/watch.jpg" class="card-img-top" alt="Product 2">
+          <div class="card-body">
+            <h5 class="card-title">Smart Watch</h5>
+            <p class="card-text">Track your fitness and stay connected with our sleek smartwatch.</p>
+            <button class="btn btn-primary w-100">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="./images/laptop.jpg" class="card-img-top" alt="Product 3">
+          <div class="card-body">
+            <h5 class="card-title">Gaming Laptop</h5>
+            <p class="card-text">Unleash the gamer in you with high-performance laptops.</p>
+            <button class="btn btn-primary w-100">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- -----Featured Products ends---- -->
+
+
+  <!-- New Arrivals Section -->
+  <div class="container my-5">
+    <h2 class="text-center mb-4">New Arrivals</h2>
+    <div class="row row-cols-1 row-cols-md-4 g-4">
+      <div class="col">
+        <div class="card h-100">
+          <img src="./images/speaker.jpg" class="card-img-top" alt="Product 4">
+          <div class="card-body">
+            <h5 class="card-title">Bluetooth Speaker</h5>
+            <p class="card-text">Portable speaker with excellent sound clarity and bass.</p>
+            <button class="btn btn-secondary w-100">Shop Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="./images/wallet.jpg" class="card-img-top" alt="Product 5">
+          <div class="card-body">
+            <h5 class="card-title">Leather Wallet</h5>
+            <p class="card-text">Premium quality leather wallet for everyday use.</p>
+            <button class="btn btn-secondary w-100">Shop Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="./images/tracker.jpg" class="card-img-top" alt="Product 6">
+          <div class="card-body">
+            <h5 class="card-title">Fitness Tracker</h5>
+            <p class="card-text">Monitor your health with an advanced fitness tracker.</p>
+            <button class="btn btn-secondary w-100">Shop Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="./images/sunglass.jpg" class="card-img-top" alt="Product 7">
+          <div class="card-body">
+            <h5 class="card-title">Designer Sunglasses</h5>
+            <p class="card-text">Stylish sunglasses to elevate your look.</p>
+            <button class="btn btn-secondary w-100">Shop Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Popular Categories Section -->
+  <div class="container my-5">
+    <h2 class="text-center mb-4">Popular Categories</h2>
+    <div class="row row-cols-1 row-cols-md-4 g-4">
+      <div class="col">
+        <div class="card h-100">
+          <div class="card-body text-center">
+            <h5 class="card-title">Electronics</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <div class="card-body text-center">
+            <h5 class="card-title">Clothing</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <div class="card-body text-center">
+            <h5 class="card-title">Home & Kitchen</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <div class="card-body text-center">
+            <h5 class="card-title">Books</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Promotional Banner Section -->
+  <div class="bg-warning py-5 text-center">
+    <div class="container">
+      <h2 class="mb-3">Limited Time Offer!</h2>
+      <p>Get up to 50% off on select products. Hurry, offer ends soon!</p>
+      <a href="./cart.html" class="btn btn-dark">Shop Now</a>
+    </div>
+  </div>
+
+  <!-- Testimonials Section -->
+  <div class="bg-light py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">What Our Customers Say</h2>
+      <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <div class="card-body">
+              <p class="card-text">"Amazing products and top-notch service! Highly recommended."</p>
+              <h5 class="card-title">- John Doe</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <div class="card-body">
+              <p class="card-text">"I found exactly what I was looking for. Great shopping experience!"</p>
+              <h5 class="card-title">- Jane Smith</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Newsletter Signup Section -->
+  <div class="bg-primary text-white py-5">
+    <div class="container text-center">
+      <h2 class="mb-4">Subscribe to Our Newsletter</h2>
+      <form class="d-flex justify-content-center">
+        <input type="email" class="form-control me-2" placeholder="Enter your email" style="max-width: 400px;">
+        <button type="submit" class="btn btn-light">Subscribe</button>
+      </form>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- -----footer starts------ -->
+
+  <footer class="bg-dark text-white text-center text-lg-start mt-4">
+    <div class="container py-4">
+      <div class="row text-start">
+        <!-- About Section -->
+        <div class="col-lg-3 col-md-6 mb-4">
+          <h5 class="text-uppercase fw-bold text-warning">About Us</h5>
+          <p class="text-light">
+            Your one-stop shop for everything you need. We provide quality products at the best prices, ensuring a
+            seamless shopping experience.
+          </p>
+        </div>
+
+        <!-- Quick Links Section -->
+        <div class="col-lg-3 col-md-6 mb-4">
+          <h5 class="text-uppercase fw-bold text-warning">Quick Links</h5>
+          <ul class="list-unstyled">
+            <li>
+              <a href="./index.html" class="text-light text-decoration-none d-flex align-items-center">
+                <i class="bi bi-house-door me-2"></i> Home
+              </a>
+            </li>
+            <li>
+              <a href="./cart.html" class="text-light text-decoration-none d-flex align-items-center">
+                <i class="bi bi-bag me-2"></i> Shop
+              </a>
+            </li>
+            <li>
+              <a href="./deals.html" class="text-light text-decoration-none d-flex align-items-center">
+                <i class="bi bi-tags me-2"></i> Deals
+              </a>
+            </li>
+            <li>
+              <a href="./contact.html" class="text-light text-decoration-none d-flex align-items-center">
+                <i class="bi bi-envelope me-2"></i> Contact Us
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Follow Us Section -->
+        <div class="col-lg-3 col-md-6 mb-4">
+          <h5 class="text-uppercase fw-bold text-warning">Follow Us</h5>
+          <ul class="list-unstyled">
+            <li>
+              <a href="#" class="text-light text-decoration-none d-flex align-items-center">
+                <i class="bi bi-facebook me-2"></i> Facebook
+              </a>
+            </li>
+            <li>
+              <a href="#" class="text-light text-decoration-none d-flex align-items-center">
+                <i class="bi bi-twitter me-2"></i> Twitter
+              </a>
+            </li>
+            <li>
+              <a href="#" class="text-light text-decoration-none d-flex align-items-center">
+                <i class="bi bi-instagram me-2"></i> Instagram
+              </a>
+            </li>
+            <li>
+              <a href="#" class="text-light text-decoration-none d-flex align-items-center">
+                <i class="bi bi-linkedin me-2"></i> LinkedIn
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Contact Information Section -->
+        <div class="col-lg-3 col-md-6 mb-4">
+          <h5 class="text-uppercase fw-bold text-warning">Contact Us</h5>
+          <ul class="list-unstyled">
+            <li class="d-flex align-items-center mb-2">
+              <i class="bi bi-envelope me-2 text-light"></i>
+              <span class="text-light">support@onlineshop.com</span>
+            </li>
+            <li class="d-flex align-items-center mb-2">
+              <i class="bi bi-telephone me-2 text-light"></i>
+              <span class="text-light">+1 (123) 456-7890</span>
+            </li>
+            <li class="d-flex align-items-center">
+              <i class="bi bi-geo-alt me-2 text-light"></i>
+              <span class="text-light">123 Online Street, E-Shop City, Country</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="text-center py-3 bg-secondary text-white">
+      © 2025 Online Shopping. All rights reserved.
+    </div>
+  </footer>
+
+
+  <!-- -----footer ends------ -->
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
